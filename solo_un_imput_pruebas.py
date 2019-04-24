@@ -13,7 +13,7 @@ fin = 0
 while fin != 1:
 
     lista_rango = []
-    lista_rango = input("dame numero y rango y rango en el que lo quieres buscar ej:X Y Z. ")
+    lista_rango = input("dame numero y rango en el que lo quieres buscar ej:X Y Z. ")
 
     lista_rango = lista_rango.split()
 
