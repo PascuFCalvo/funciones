@@ -1,5 +1,6 @@
 import datetime
 import random
+import msvcrt
 
 #constantes
 
@@ -108,6 +109,14 @@ if week_day == 6:
 #diamuerte es una fecha, se formatea con strftime, y de dias_para_morir es un timedelta y le puedes pedir los dias , horas , minutos etc
 
 print("Te vas a morir el {} {}, te quedan {} dias de vida".format(dia_semana, diamuerte.strftime("%d-%m-%Y"), dias_pa_morir.days))
+
+#aaparte añadimos que se meta en un txt
+
+archivo_muerte = open("lamuerte","w")
+archivo_muerte.write("Te vas a morir el {} {}, te quedan {} dias de vida.\n".format(dia_semana, diamuerte.strftime("%d-%m-%Y"), dias_pa_morir.days))
+archivo_muerte.close()
+
+msvcrt.getch()
 
 
 
